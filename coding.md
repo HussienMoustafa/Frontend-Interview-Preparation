@@ -1,4 +1,4 @@
-## How would you structure a large React application?
+## 1. How would you structure a large React application?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -36,7 +36,7 @@ src/
 - Keep shared code small and intentional.
 - Organize around how the product changes.
 
-## How would you design a reusable component?
+## 2. How would you design a reusable component?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -70,7 +70,7 @@ Good reusable components solve a repeated problem in a consistent way. They shou
 - Keep the public API small and expressive.
 - Reusability should not destroy clarity.
 
-## How would you handle global state in a large application?
+## 3. How would you handle global state in a large application?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -106,7 +106,7 @@ server state -> data fetching cache
 - Match the tool to the type of state.
 - Keep ownership obvious.
 
-## How would you optimize a slow frontend application?
+## 4. How would you optimize a slow frontend application?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -140,7 +140,7 @@ Performance work should start with measurement. Common fixes include reducing bu
 - Focus on the biggest bottleneck first.
 - Simplifying work is often more effective than micro-optimizing.
 
-## How would you design the frontend architecture for a large-scale application?
+## 5. How would you design the frontend architecture for a large-scale application?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned

@@ -1,4 +1,4 @@
-## What is the difference between unit, integration, and end-to-end testing?
+## 1. What is the difference between unit, integration, and end-to-end testing?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -34,7 +34,7 @@ e2e -> browser user journey
 - A balanced test strategy is usually best.
 - More unit tests do not always mean better quality.
 
-## What is Jest and what is it used for?
+## 2. What is Jest and what is it used for?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -68,7 +68,7 @@ expect(sum(1, 2)).toBe(3);
 - It is widely used in JavaScript and React apps.
 - Mocking and assertions are core features.
 
-## What is React Testing Library?
+## 3. What is React Testing Library?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -102,7 +102,7 @@ screen.getByRole("button", { name: /save/i });
 - Prefer accessible queries.
 - Avoid overfocusing on internals.
 
-## What should you test in a React component?
+## 4. What should you test in a React component?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -136,7 +136,7 @@ expect(screen.getByText("Loading...")).toBeInTheDocument();
 - Test what users can observe.
 - Keep tests robust against refactors.
 
-## What is mocking and when should you use it?
+## 5. What is mocking and when should you use it?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned

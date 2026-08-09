@@ -1,4 +1,4 @@
-## What is Next.js and why use it instead of plain React?
+## 1. What is Next.js and why use it instead of plain React?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -34,7 +34,7 @@ export default function Page() {
 - It simplifies production-ready web development.
 - It supports both server and client rendering.
 
-## Explain SSR, CSR, SSG, and ISR.
+## 2. Explain SSR, CSR, SSG, and ISR.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -70,7 +70,7 @@ export async function getServerSideProps() {
 - CSR is not always the best default.
 - ISR helps balance static speed with content updates.
 
-## What is the difference between Server Components and Client Components?
+## 3. What is the difference between Server Components and Client Components?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -104,7 +104,7 @@ Server Components are great for data fetching, secure access to backend resource
 - Client Components handle interactivity.
 - Use the client boundary only where needed.
 
-## When would you use `"use client"`?
+## 4. When would you use `"use client"`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -140,7 +140,7 @@ import { useState } from "react";
 - It marks the client/server boundary.
 - Smaller client bundles are usually better.
 
-## Explain Next.js routing.
+## 5. Explain Next.js routing.
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -174,7 +174,7 @@ app/products/[id]/page.tsx
 - The folder structure is part of the app design.
 - Dynamic segments use bracket syntax.
 
-## How does Next.js handle data fetching?
+## 6. How does Next.js handle data fetching?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -208,7 +208,7 @@ const data = await fetch("https://api.example.com/posts");
 - Choose the fetching location based on user experience.
 - Caching strategy matters a lot.
 
-## What are the benefits of server-side rendering?
+## 7. What are the benefits of server-side rendering?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -244,7 +244,7 @@ export default async function Page() {
 - It is useful for SEO and dynamic content.
 - It comes with server complexity.
 
-## How would you optimize a Next.js application?
+## 8. How would you optimize a Next.js application?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned

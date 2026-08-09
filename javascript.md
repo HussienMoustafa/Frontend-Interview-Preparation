@@ -1,4 +1,4 @@
-## What is the difference between `var`, `let`, and `const`?
+## 1. What is the difference between `var`, `let`, and `const`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -42,7 +42,7 @@ function demo() {
 - Use `let` when reassignment is needed.
 - Avoid `var` unless reading old code.
 
-## What is hoisting in JavaScript?
+## 2. What is hoisting in JavaScript?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -82,7 +82,7 @@ function sayHi() {
 - Function declarations are the most hoisted form.
 - TDZ applies to `let`, `const`, and class declarations.
 
-## What is the difference between `==` and `===`?
+## 3. What is the difference between `==` and `===`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -120,7 +120,7 @@ null === undefined; // false
 - Know the common edge cases with `null` and `undefined`.
 - Coercion is one of the biggest sources of bugs in JavaScript.
 
-## What are primitive and reference types?
+## 4. What are primitive and reference types?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -162,7 +162,7 @@ console.log(user1.name); // "B"
 - Objects are mutable and shared by reference.
 - `typeof null` returning `"object"` is a historical bug.
 
-## How does JavaScript pass values to functions?
+## 5. How does JavaScript pass values to functions?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -210,7 +210,7 @@ console.log(person.name); // "New"
 - Object mutation affects shared state.
 - Reassignment inside a function does not affect the caller.
 
-## What is scope? Explain global, function, and block scope.
+## 6. What is scope? Explain global, function, and block scope.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -255,7 +255,7 @@ function demo() {
 - `let` and `const` are block-scoped.
 - Scope helps avoid naming collisions and accidental bugs.
 
-## What is a closure?
+## 7. What is a closure?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -299,7 +299,7 @@ console.log(counter()); // 2
 - Closures are one of the most important JavaScript concepts.
 - Be ready to explain them with a practical example.
 
-## Give a real-world use case for closures.
+## 8. Give a real-world use case for closures.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -340,7 +340,7 @@ console.log(client("/users"));
 - Closures are also common in React hooks and event handlers.
 - Loop-related closure bugs often appear with `var`.
 
-## What is lexical scope?
+## 9. What is lexical scope?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -382,7 +382,7 @@ function outer() {
 - Scope is determined at write time, not call time.
 - Closures depend on lexical scope.
 
-## What is the Temporal Dead Zone?
+## 10. What is the Temporal Dead Zone?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -420,7 +420,7 @@ Although these variables are hoisted, they are not initialized until execution r
 - `var` does not have a TDZ in the same way.
 - This is a common interview edge case.
 
-## What is the difference between regular functions and arrow functions?
+## 11. What is the difference between regular functions and arrow functions?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -465,7 +465,7 @@ user.arrow(); // undefined in most cases
 - Regular functions are needed when you want dynamic `this`.
 - Know the `arguments` difference too.
 
-## How does `this` work in JavaScript?
+## 12. How does `this` work in JavaScript?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -506,7 +506,7 @@ person.sayName(); // "Leila"
 - `this` is one of the most misunderstood parts of JavaScript.
 - Arrow functions use lexical `this`.
 
-## What are `call`, `apply`, and `bind`?
+## 13. What are `call`, `apply`, and `bind`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -550,7 +550,7 @@ console.log(bound("Hey"));
 - `bind` returns a new function.
 - `apply` is convenient when arguments are already in an array.
 
-## What is prototypal inheritance?
+## 14. What is prototypal inheritance?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -591,7 +591,7 @@ console.log(child.greet()); // "hello"
 - Objects delegate property lookups to their prototypes.
 - Shared methods usually live on prototypes to save memory.
 
-## What is the prototype chain?
+## 15. What is the prototype chain?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -627,7 +627,7 @@ console.log(Object.getPrototypeOf(arr));
 - Methods like `toString` come from prototypes.
 - Understanding the chain helps with debugging weird lookup behavior.
 
-## What is the difference between shallow copy and deep copy?
+## 16. What is the difference between shallow copy and deep copy?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -665,7 +665,7 @@ console.log(original.address.city); // "Alex"
 - Deep copy is needed when nested state must be isolated.
 - Be careful with `JSON.parse(JSON.stringify(...))` limitations.
 
-## Explain destructuring.
+## 17. Explain destructuring.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -703,7 +703,7 @@ const [first, second] = numbers;
 - Array destructuring uses order.
 - Destructuring is common in React and modern JS.
 
-## Explain spread vs rest operators.
+## 18. Explain spread vs rest operators.
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -742,7 +742,7 @@ function sum(...values) {
 - Rest parameters must be last in a function signature.
 - The syntax looks the same but the usage is different.
 
-## What are higher-order functions?
+## 19. What are higher-order functions?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -783,7 +783,7 @@ console.log(double(5)); // 10
 - They are essential in async and array methods.
 - Closures often appear together with higher-order functions.
 
-## What are pure functions?
+## 20. What are pure functions?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -819,7 +819,7 @@ function add(a, b) {
 - Avoid mutation and hidden dependencies.
 - They improve reliability and testability.
 
-## Explain the JavaScript Event Loop.
+## 21. Explain the JavaScript Event Loop.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -861,7 +861,7 @@ console.log("end");
 - Microtasks usually run before macrotasks.
 - This is one of the most common interview topics.
 
-## Explain Call Stack, Web APIs, Task Queue, and Microtask Queue.
+## 22. Explain Call Stack, Web APIs, Task Queue, and Microtask Queue.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -901,7 +901,7 @@ console.log("D");
 - The call stack must be empty before queued work runs.
 - Knowing the order helps explain async output.
 
-## What is the difference between Promises and `async/await`?
+## 23. What is the difference between Promises and `async/await`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -938,7 +938,7 @@ async function getData() {
 - Use `try/catch` for error handling.
 - Promises remain the underlying primitive.
 
-## What is the difference between `Promise.all`, `allSettled`, `race`, and `any`?
+## 24. What is the difference between `Promise.all`, `allSettled`, `race`, and `any`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -976,7 +976,7 @@ Promise.allSettled([p1, p2]).then(console.log);
 - `allSettled` never short-circuits.
 - `any` returns the first success.
 
-## Explain debouncing vs throttling and give use cases.
+## 25. Explain debouncing vs throttling and give use cases.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned

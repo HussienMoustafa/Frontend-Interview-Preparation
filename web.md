@@ -1,4 +1,4 @@
-## What happens when you enter a URL into the browser?
+## 1. What happens when you enter a URL into the browser?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -32,7 +32,7 @@ URL -> DNS -> connection -> request -> response -> parse -> render
 - Network, parsing, layout, and rendering all matter.
 - Caching can short-circuit parts of the process.
 
-## Explain HTTP methods: GET, POST, PUT, PATCH, DELETE.
+## 2. Explain HTTP methods: GET, POST, PUT, PATCH, DELETE.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -69,7 +69,7 @@ DELETE /users/1
 - GET should not mutate server state.
 - PUT usually replaces, PATCH usually modifies.
 
-## What is the difference between HTTP and HTTPS?
+## 3. What is the difference between HTTP and HTTPS?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -103,7 +103,7 @@ https://example.com
 - It protects confidentiality and integrity.
 - Production sites should use HTTPS.
 
-## What are HTTP status codes and the important ones you should know?
+## 4. What are HTTP status codes and the important ones you should know?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -139,7 +139,7 @@ The main classes are informational, success, redirection, client error, and serv
 - Status codes communicate request outcomes.
 - `401` and `403` are a common interview trap.
 
-## What is CORS and why does it exist?
+## 5. What is CORS and why does it exist?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -173,7 +173,7 @@ Access-Control-Allow-Origin: https://example.com
 - It protects against unsafe cross-origin reads.
 - Correct headers are required on the server.
 
-## What is the difference between cookies, localStorage, and sessionStorage?
+## 6. What is the difference between cookies, localStorage, and sessionStorage?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -207,7 +207,7 @@ localStorage.setItem("theme", "dark");
 - localStorage survives browser restarts.
 - sessionStorage is tab-scoped.
 
-## What is caching and how can it improve web performance?
+## 7. What is caching and how can it improve web performance?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -241,7 +241,7 @@ Cache-Control: public, max-age=3600
 - Freshness vs performance is the main tradeoff.
 - Good cache headers matter.
 
-## What is the difference between authentication and authorization?
+## 8. What is the difference between authentication and authorization?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned

@@ -1,4 +1,4 @@
-## What is React and why is it used?
+## 1. What is React and why is it used?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -34,7 +34,7 @@ function Greeting({ name }) {
 - Components and state are the core ideas.
 - It is widely used for interactive web apps.
 
-## What is the difference between props and state?
+## 2. What is the difference between props and state?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -70,7 +70,7 @@ function Counter({ initialValue }) {
 - State is owned locally.
 - Keep state as minimal as possible.
 
-## What causes a React component to re-render?
+## 3. What causes a React component to re-render?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -105,7 +105,7 @@ setCount(count + 1);
 - Not every render leads to DOM changes.
 - Memoization can help when it matters.
 
-## What is the Virtual DOM?
+## 4. What is the Virtual DOM?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -139,7 +139,7 @@ return <div>{count}</div>;
 - React compares old and new trees.
 - The goal is efficient, predictable updates.
 
-## Explain reconciliation.
+## 5. Explain reconciliation.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -173,7 +173,7 @@ items.map((item) => <li key={item.id}>{item.name}</li>)
 - Stable keys improve correctness.
 - It explains why some UI changes are reused and others are remounted.
 
-## Why are keys important when rendering lists?
+## 6. Why are keys important when rendering lists?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -209,7 +209,7 @@ Without stable keys, React may reuse the wrong DOM elements or component instanc
 - Prefer IDs from your data.
 - Keys help React preserve component identity.
 
-## What happens when state changes?
+## 7. What happens when state changes?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -243,7 +243,7 @@ setCount((current) => current + 1);
 - React may batch multiple updates.
 - The DOM update happens after reconciliation.
 
-## What is the difference between controlled and uncontrolled components?
+## 8. What is the difference between controlled and uncontrolled components?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -277,7 +277,7 @@ In controlled components, the value is driven by React state and updated through
 - Uncontrolled can be simpler in some cases.
 - Refs are often used with uncontrolled inputs.
 
-## What is lifting state up?
+## 9. What is lifting state up?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -313,7 +313,7 @@ function Parent() {
 - Lifting state up reduces duplication.
 - It often leads to cleaner data flow.
 
-## What is prop drilling and how can you solve it?
+## 10. What is prop drilling and how can you solve it?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -347,7 +347,7 @@ Prop drilling is not inherently wrong, but it becomes noisy when intermediate co
 - Context is the usual first fix.
 - Avoid solving small problems with large global state.
 
-## Explain `useState`.
+## 11. Explain `useState`.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -381,7 +381,7 @@ const [count, setCount] = useState(0);
 - State updates trigger re-renders.
 - The setter should not be treated as synchronous.
 
-## Explain `useEffect`.
+## 12. Explain `useEffect`.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -417,7 +417,7 @@ useEffect(() => {
 - Keep render logic pure.
 - Cleanup prevents leaks and stale subscriptions.
 
-## How does the `useEffect` dependency array work?
+## 13. How does the `useEffect` dependency array work?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -453,7 +453,7 @@ useEffect(() => {
 - The array controls re-execution, not initial mount only.
 - Stable references help avoid unnecessary reruns.
 
-## What is the cleanup function in `useEffect`?
+## 14. What is the cleanup function in `useEffect`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -490,7 +490,7 @@ useEffect(() => {
 - It runs before the next effect and on unmount.
 - Think about anything that needs teardown.
 
-## What problems can occur with incorrect `useEffect` dependencies?
+## 15. What problems can occur with incorrect `useEffect` dependencies?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -526,7 +526,7 @@ useEffect(() => {
 - Extra unstable dependencies can cause loops.
 - Follow lint rules and understand the data flow.
 
-## What is the difference between `useMemo` and `useCallback`?
+## 16. What is the difference between `useMemo` and `useCallback`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -561,7 +561,7 @@ const handleClick = useCallback(() => setOpen(true), []);
 - `useCallback` memoizes function identity.
 - Avoid using them everywhere by default.
 
-## What is `React.memo`?
+## 17. What is `React.memo`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -597,7 +597,7 @@ const Item = React.memo(function Item({ name }) {
 - Props are shallow-compared by default.
 - Use it selectively, not everywhere.
 
-## When should you use `useMemo`?
+## 18. When should you use `useMemo`?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -631,7 +631,7 @@ const visibleItems = useMemo(() => expensiveFilter(items), [items]);
 - Measure before optimizing.
 - Keep the dependency list accurate.
 
-## When should you use `useCallback`?
+## 19. When should you use `useCallback`?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -667,7 +667,7 @@ const handleSubmit = useCallback(() => {
 - It is often paired with `React.memo`.
 - Avoid unnecessary memoization.
 
-## What are custom hooks and why would you create one?
+## 20. What are custom hooks and why would you create one?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -703,7 +703,7 @@ function useWindowWidth() {
 - They make components cleaner.
 - The `use` prefix is required for linting and conventions.
 
-## How do you prevent unnecessary re-renders?
+## 21. How do you prevent unnecessary re-renders?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -737,7 +737,7 @@ const MemoChild = React.memo(Child);
 - Keep state as close as possible to where it is used.
 - Memoization is a tool, not a default.
 
-## What is Context API and when should you use it?
+## 22. What is Context API and when should you use it?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -771,7 +771,7 @@ const ThemeContext = createContext("light");
 - Avoid using it as a universal state store.
 - Context reduces prop drilling.
 
-## What are React Error Boundaries?
+## 23. What are React Error Boundaries?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -807,7 +807,7 @@ They help prevent a single component failure from crashing the entire app. Error
 - They only catch render-tree errors.
 - A fallback UI is required.
 
-## What is lazy loading in React?
+## 24. What is lazy loading in React?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -841,7 +841,7 @@ const Settings = React.lazy(() => import("./Settings"));
 - Pair with a fallback UI.
 - Don’t split too aggressively.
 
-## What is code splitting?
+## 25. What is code splitting?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned

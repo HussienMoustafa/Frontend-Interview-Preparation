@@ -1,4 +1,4 @@
-## Why use TypeScript instead of JavaScript?
+## 1. Why use TypeScript instead of JavaScript?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -34,7 +34,7 @@ function add(a: number, b: number): number {
 - It improves maintainability, tooling, and readability.
 - It still compiles to plain JavaScript.
 
-## What is the difference between `interface` and `type`?
+## 2. What is the difference between `interface` and `type`?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -72,7 +72,7 @@ type Status = "idle" | "loading" | "success";
 - `type` is more expressive for composition.
 - Team conventions matter more than strict rules.
 
-## What are union and intersection types?
+## 3. What are union and intersection types?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -107,7 +107,7 @@ type Employee = { name: string } & { id: number };
 - Intersections mean all of many.
 - Narrowing is often needed with unions.
 
-## What are generics?
+## 4. What are generics?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -143,7 +143,7 @@ function identity<T>(value: T): T {
 - Type inference often removes the need to write explicit type arguments.
 - Constraints can limit what `T` is allowed to be.
 
-## Explain `any`, `unknown`, and `never`.
+## 5. Explain `any`, `unknown`, and `never`.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -180,7 +180,7 @@ if (typeof value === "string") {
 - `never` often signals impossible branches.
 - `any` should be used sparingly.
 
-## What is type narrowing?
+## 6. What is type narrowing?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -220,7 +220,7 @@ function print(value: string | number) {
 - TypeScript follows the control flow of your code.
 - Good narrowing reduces runtime errors.
 
-## What are type guards?
+## 7. What are type guards?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -256,7 +256,7 @@ function isString(value: unknown): value is string {
 - Custom guards are common in validation code.
 - They work hand in hand with narrowing.
 
-## What is the difference between optional properties and nullable properties?
+## 8. What is the difference between optional properties and nullable properties?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -293,7 +293,7 @@ type User = {
 - Nullable means may explicitly hold `null`.
 - Be consistent with API and state modeling.
 
-## What are utility types such as `Partial`, `Pick`, `Omit`, and `Record`?
+## 9. What are utility types such as `Partial`, `Pick`, `Omit`, and `Record`?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -328,7 +328,7 @@ type UserPreview = Pick<User, "id" | "name">;
 - They are common in state and API layers.
 - Learn the most common ones by name and behavior.
 
-## What is `readonly`?
+## 10. What is `readonly`?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -365,7 +365,7 @@ type Point = {
 - It is enforced by TypeScript, not JavaScript.
 - Immutable patterns are common in React.
 
-## What are enums and what alternatives can you use?
+## 11. What are enums and what alternatives can you use?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -405,7 +405,7 @@ const Status = {
 - Enums are more common in older codebases.
 - Match the choice to your team's conventions.
 
-## How would you type a React component's props?
+## 12. How would you type a React component's props?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned

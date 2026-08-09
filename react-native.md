@@ -1,4 +1,4 @@
-## What is the difference between React and React Native?
+## 1. What is the difference between React and React Native?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -34,7 +34,7 @@ React targets the browser and renders to the DOM. React Native uses the same com
 - It uses native rendering primitives.
 - Business logic can often be shared.
 
-## How does React Native communicate with native platforms?
+## 2. How does React Native communicate with native platforms?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -68,7 +68,7 @@ NativeModules.SomeModule.doThing();
 - Cross-thread communication has performance cost.
 - Architecture changes aim to reduce that overhead.
 
-## What is the difference between React Native components and native components?
+## 3. What is the difference between React Native components and native components?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -104,7 +104,7 @@ Components like `View`, `Text`, and `Pressable` are portable building blocks tha
 - Native components are for platform-specific needs.
 - Keep the native surface area small when possible.
 
-## Explain the React Native rendering architecture at a high level.
+## 4. Explain the React Native rendering architecture at a high level.
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -138,7 +138,7 @@ At a high level, JavaScript decides what the UI should look like, React Native c
 - Layout and rendering are separate concerns.
 - Architecture directly affects responsiveness.
 
-## How would you optimize React Native performance?
+## 5. How would you optimize React Native performance?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -172,7 +172,7 @@ Start by measuring bottlenecks instead of guessing. Common fixes include memoizi
 - Use virtualization for large lists.
 - Keep the JS thread free for user interactions.
 
-## What causes unnecessary re-renders in React Native?
+## 6. What causes unnecessary re-renders in React Native?
 
 **Priority:** ⭐⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -206,7 +206,7 @@ React Native follows React's rendering model, so the same render triggers apply.
 - Inline objects and functions can be expensive.
 - Scope state carefully.
 
-## How does React Navigation work?
+## 7. How does React Navigation work?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -240,7 +240,7 @@ navigation.navigate("Details", { id: 1 });
 - Different navigator types solve different flows.
 - Keep route params small and serializable.
 
-## How do you persist data in React Native?
+## 8. How do you persist data in React Native?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -274,7 +274,7 @@ await AsyncStorage.setItem("theme", "dark");
 - Secure storage is for secrets.
 - Load persisted data early in app startup.
 
-## AsyncStorage vs secure storage — when would you use each?
+## 9. AsyncStorage vs secure storage — when would you use each?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -308,7 +308,7 @@ await SecureStore.setItemAsync("token", token);
 - Use AsyncStorage for low-risk preferences.
 - Never assume plain storage is private.
 
-## How do you handle deep linking?
+## 10. How do you handle deep linking?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -342,7 +342,7 @@ myapp://product/42
 - Support both app launch and in-app navigation.
 - Test links on both platforms.
 
-## How do you handle permissions in React Native?
+## 11. How do you handle permissions in React Native?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
@@ -376,7 +376,7 @@ const result = await requestCameraPermission();
 - Handle denial gracefully.
 - Platform-specific APIs vary by permission type.
 
-## How would you debug a React Native performance issue?
+## 12. How would you debug a React Native performance issue?
 
 **Priority:** ⭐⭐⭐⭐  
 **Status:** 🔴 Not learned
